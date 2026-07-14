@@ -1,0 +1,18 @@
+# --- Web framework ---
+fastapi>=0.115,<0.116
+uvicorn[standard]>=0.34
+
+# --- AI Agent stack (MANDATORY per assignment) ---
+# langchain-core is intentionally NOT pinned: langgraph + langchain-groq
+# resolve a mutually-compatible version automatically.
+langgraph>=0.2.60,<0.3
+langchain-groq>=0.2.3,<0.3
+
+# --- Database (PostgreSQL) ---
+sqlalchemy>=2.0.36,<2.1
+psycopg2-binary>=2.9.10
+
+# --- Utils ---
+python-dotenv>=1.0.1
+pydantic>=2.9,<3
+pydantic-settings>=2.6
